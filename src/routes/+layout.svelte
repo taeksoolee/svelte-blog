@@ -34,10 +34,7 @@
           <a href="/tech-review">Thch Review</a>
           <ul>
             <li>
-              <a href="/tech-review/anker">Anker</a>
-              <ul>
-                <li><a href="/tech-review/anker/q45">Space Q45</a></li>
-              </ul>
+              <a href="/tech-review/anker-spacesound-q45">Space spacesound Q45</a>
             </li>
           </ul>
         </li>
