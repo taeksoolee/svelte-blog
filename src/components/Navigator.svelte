@@ -1,42 +1,31 @@
 <script lang="ts">
-  import nav from '../nav';
+	import type { Route } from 'src/interfaces';
+	import { onMount } from 'svelte';
+	import NavigationItem from './NavigationItem.svelte';
+
+  let routes: Route[] | null = null;
+
+  function setRoutes() {
+    fetch('/routes.json')
+      .then(res => res.json())
+      .then(data => {
+        routes = data as Route[];
+      });
+  }
+
+  onMount(() => {
+    setRoutes();
+  });
 </script>
 
 <nav class="navigation">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li>
-      <a href="/develop">Develop</a>
-      <ul>
-        <li>
-          <a href="/develop/react">React</a>
-          <ul>
-            <li><a href="/develop/react/getting-start">Getting Start</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/develop/nextjs">NestJS</a>
-          <ul>
-            <li><a href="/develop/nextjs/getting-start">Getting Start</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/develop/svelte">Svelte</a>
-          <ul>
-            <li><a href="/develop/svelte/getting-start">Getting Start</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="/tech-review">Thch Review</a>
-      <ul>
-        <li>
-          <a href="/tech-review/anker-spacesound-q45">Space spacesound Q45</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  {#if !!routes}
+    <ul>
+      {#each routes as route}
+        <NavigationItem route={route} />
+      {/each}
+    </ul>
+  {/if}
 </nav>
 
 <style>

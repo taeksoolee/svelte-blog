@@ -1,5 +1,6 @@
 <script lang="ts">
   import Navigator from '../components/Navigator.svelte';
+  
 </script>
 
 <div>

@@ -45,7 +45,7 @@ export default [
 		children: [
 			{
 				title: 'Space spacesound Q45',
-				link: '/tech-review/anker-space'
+				link: '/tech-review/anker-spacesound-q45'
 			}
 		]
 	}
