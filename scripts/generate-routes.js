@@ -44,7 +44,7 @@ function setRoutes(dirList, ref) {
 			id: currId,
 			title: pageData.title,
 			description: pageData.description,
-			keywords: rootPageData.keywords,
+			keywords: pageData.keywords,
 			link: pageData.link,
 			mTimeMs: pageData.meta.mtimeMs,
 			depth: ids.length,
@@ -65,4 +65,4 @@ function setRoutes(dirList, ref) {
 }
 
 setRoutes(rootPageData.dirList, routes);
-fs.writeFileSync(path.resolve(__root, 'static', 'routes.json'), JSON.stringify(routes), {});
+fs.writeFileSync(path.resolve(__root, 'src', 'data', 'routes.json'), JSON.stringify(routes), {});
