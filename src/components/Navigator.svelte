@@ -1,35 +1,25 @@
 <script lang="ts">
-	import type { Route } from 'src/interfaces';
+	import { toKorChars } from 'src/utils';
+	import { flattenRoutes$, routes$ } from 'src/store';
 	import { onMount } from 'svelte';
 	import NavigationItem from './NavigationItem.svelte';
 
-  let routes: Route[] | null = null;
-
-  function setRoutes() {
-    fetch('/routes.json')
-      .then(res => res.json())
-      .then(data => {
-        routes = data as Route[];
-      });
-  }
-
-  onMount(() => {
-    setRoutes();
-  });
+	onMount(async () => {
+		routes$.subscribe((routes) => {
+			console.log(routes);
+		});
+	});
 </script>
 
 <nav class="navigation">
-  {#if !!routes}
-    <ul>
-      {#each routes as route}
-        <NavigationItem route={route} />
-      {/each}
-    </ul>
-  {/if}
+	<ul>
+		{#each $routes$ as route}
+			<NavigationItem {route} />
+		{/each}
+	</ul>
 </nav>
 
 <style>
-  .navigation {
-
-  }
+	.navigation {
+	}
 </style>
