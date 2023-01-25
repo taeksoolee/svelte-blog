@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Anker</title>
+  <title>Anker Spacesound q45</title>
 </svelte:head>
 
 <h1>[내돈내산] Anker Spacesound q45 구매, 사용 후기</h1>

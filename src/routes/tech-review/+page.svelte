@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Crossover Monitor Review</title>
+  <title>Tech Review</title>
 </svelte:head>
 
-<h1>Crossover Monitor Review</h1>
+<h1>Tech Review</h1>
