@@ -1,8 +1,8 @@
 export default interface Route {
 	id: number;
 	title: string;
-	description: string;
-	keyowrds: string; // sperate: comma
+	description?: string;
+	keywords?: string; // sperate: comma
 	link: string;
 	mTimeMs: number;
 	depth: number;
