@@ -14,8 +14,16 @@
 	$: keyword, search();
 	$: filteredRoutesStr = JSON.stringify(filteredRoutes);
 
-	function includesKeyword(target: string = '', keyword: string) {
-		return toKorChars(target).join('').includes(toKorChars(keyword).join(''));
+	function includesKeyword(keyword: string) {
+		const _keyword = toKorChars(keyword).join('');
+		return (target: string = '') => {
+			if (_keyword.length < 2) {
+				return false;
+			}
+
+			const _target = toKorChars(target).join('');
+			return _target.includes(_keyword);
+		};
 	}
 
 	function search() {
@@ -24,15 +32,27 @@
 			return;
 		}
 
+		const splitedKeywords = keyword.split(' ');
+
 		filteredRoutes = flattenRoutes.filter((v) => {
-			if (includesKeyword(v.title, keyword)) return true;
-			if (includesKeyword(v.description, keyword)) return true;
+			for (const i in splitedKeywords) {
+				const splitedKeyword = splitedKeywords[i];
+				const _includesKeyword = includesKeyword(splitedKeyword);
 
-			const keywords = v.keywords?.split(',') ?? [];
-			for (const i in keywords) {
-				if (includesKeyword(keywords[i], keyword)) return true;
+				if (_includesKeyword(v.title)) {
+					return true;
+				}
+				if (_includesKeyword(v.description)) {
+					return true;
+				}
+
+				const keywords = v.keywords?.split(',') ?? [];
+				for (const i in keywords) {
+					if (_includesKeyword(keywords[i])) {
+						return true;
+					}
+				}
 			}
-
 			return false;
 		});
 	}
