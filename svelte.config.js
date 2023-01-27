@@ -9,8 +9,12 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
-	}
+		adapter: adapter({
+			pages: 'build', // is default
+			assets: 'build', // is default
+			strict: false,
+		}),
+	},
 };
 
 export default config;

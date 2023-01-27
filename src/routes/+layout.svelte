@@ -1,18 +1,22 @@
 <script lang="ts">
-  import Navigator from '../components/Navigator.svelte';
-  
+	import SearchInput from 'src/components/SearchInput.svelte';
+	import Navigator from 'src/components/Navigator.svelte';
+	import RecentView from 'src/components/RecentView.svelte';
 </script>
 
 <div>
-  <section>
-    <Navigator />
-  </section>
+	<section>
+		<Navigator />
+		<hr />
+		<RecentView />
+		<hr />
+		<SearchInput />
+	</section>
 
-  <main>
-    <slot></slot>
-  </main>
+	<main>
+		<slot />
+	</main>
 </div>
 
 <style>
-  
 </style>
