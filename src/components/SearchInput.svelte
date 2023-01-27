@@ -1,6 +1,6 @@
 <script context="module">
 	import { flattenRoutes$ } from 'src/store';
-	import { toKorChars } from 'src/utils';
+	import { toKorChars } from '$lib/utils/strings';
 	import { onMount } from 'svelte';
 </script>
 

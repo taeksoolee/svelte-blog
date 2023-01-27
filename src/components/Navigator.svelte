@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { toKorChars } from 'src/utils';
-	import { flattenRoutes$, routes$ } from 'src/store';
+	import { routes$ } from 'src/store';
 	import { onMount } from 'svelte';
 	import NavigationItem from './NavigationItem.svelte';
 
