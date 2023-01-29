@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '../app.css';
+
 	import SearchInput from 'src/components/SearchInput.svelte';
 	import Navigator from 'src/components/Navigator.svelte';
 	import RecentView from 'src/components/RecentView.svelte';
