@@ -9,3 +9,5 @@ export default interface Route {
 	refIds: number[]; // reference id
 	children?: Route[];
 }
+
+export type FlattenRoutes = Omit<Route, 'children'>[];
