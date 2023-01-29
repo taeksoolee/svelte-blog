@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import '../app.scss';
 
 	import SearchInput from 'src/components/SearchInput.svelte';
 	import Navigator from 'src/components/Navigator.svelte';
