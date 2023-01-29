@@ -3,6 +3,7 @@
 	import { toKorChars } from '$lib/utils/strings';
 	import { onMount } from 'svelte';
 	import type { Route } from 'src/interfaces';
+	import LinkItem from './LinkItem.svelte';
 
 	let filteredRoutes: Route[] = [];
 	let flattenRoutes: Omit<Route, 'children'>[] = [];
@@ -64,6 +65,6 @@
 <input type="text" bind:value={keyword} />
 <div>
 	{#each filteredRoutes as route}
-		<div>{route.title}</div>
+		<LinkItem {route} />
 	{/each}
 </div>

@@ -2,17 +2,10 @@
 	import { URI_CONTEXT } from '$lib/const/env';
 	import type { Route } from 'src/interfaces';
 	import { onMount } from 'svelte';
+	import LinkItem from './LinkItem.svelte';
 
 	export let route: Route;
 	let opened = false;
-
-	function resolver(path: string) {
-		return URI_CONTEXT + path;
-	}
-
-	function link() {
-		location.href = resolver(route.link);
-	}
 
 	onMount(() => {
 		const uri = window.location.href.replace(window.location.origin + URI_CONTEXT, '');
@@ -23,7 +16,7 @@
 </script>
 
 <li>
-	<button role="link" on:click={link}> {route.title} </button>
+	<LinkItem {route} />
 	{#if route.children}
 		<button on:click={() => (opened = !opened)}>
 			{#if opened}
