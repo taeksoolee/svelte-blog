@@ -1,8 +1,9 @@
 <script lang="ts">
-	import type { Route } from 'src/interfaces';
+	import type { FlattenRoutes } from 'src/interfaces/Route';
 	import { flattenRoutes$ } from 'src/store';
+	import RecentItem from './RecentItem.svelte';
 
-	let recentRoutes: Omit<Route, 'children'>[] = [];
+	let recentRoutes: FlattenRoutes = [];
 
 	flattenRoutes$.subscribe((subscriber) => {
 		subscriber.sort((a, b) => b.mTimeMs - a.mTimeMs);
@@ -13,7 +14,6 @@
 
 <div>
 	{#each recentRoutes as route}
-		<div>{route.title}</div>
-		<div>{route.mTimeMs}</div>
+		<RecentItem {route} />
 	{/each}
 </div>
