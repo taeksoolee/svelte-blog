@@ -1,10 +1,7 @@
-<script context="module">
+<script lang="ts">
 	import { flattenRoutes$ } from 'src/store';
 	import { toKorChars } from '$lib/utils/strings';
 	import { onMount } from 'svelte';
-</script>
-
-<script lang="ts">
 	import type { Route } from 'src/interfaces';
 
 	let filteredRoutes: Route[] = [];
@@ -12,17 +9,16 @@
 	let keyword: string = '';
 
 	$: keyword, search();
-	$: filteredRoutesStr = JSON.stringify(filteredRoutes);
 
 	function includesKeyword(keyword: string) {
 		const _keyword = toKorChars(keyword).join('');
 		return (target: string = '') => {
-			if (_keyword.length < 2) {
+			if (_keyword.length < 1) {
 				return false;
 			}
 
 			const _target = toKorChars(target).join('');
-			return _target.includes(_keyword);
+			return _target.toUpperCase().includes(_keyword.toUpperCase());
 		};
 	}
 
@@ -34,19 +30,19 @@
 
 		const splitedKeywords = keyword.split(' ');
 
-		filteredRoutes = flattenRoutes.filter((v) => {
+		filteredRoutes = flattenRoutes.filter((route) => {
 			for (const i in splitedKeywords) {
 				const splitedKeyword = splitedKeywords[i];
 				const _includesKeyword = includesKeyword(splitedKeyword);
 
-				if (_includesKeyword(v.title)) {
+				if (_includesKeyword(route.title)) {
 					return true;
 				}
-				if (_includesKeyword(v.description)) {
+				if (_includesKeyword(route.description)) {
 					return true;
 				}
 
-				const keywords = v.keywords?.split(',') ?? [];
+				const keywords = route.keywords?.split(',') ?? [];
 				for (const i in keywords) {
 					if (_includesKeyword(keywords[i])) {
 						return true;
@@ -67,5 +63,7 @@
 
 <input type="text" bind:value={keyword} />
 <div>
-	{filteredRoutesStr}
+	{#each filteredRoutes as route}
+		<div>{route.title}</div>
+	{/each}
 </div>
