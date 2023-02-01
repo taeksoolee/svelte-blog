@@ -1,80 +1,23 @@
 {
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-b73056b2.css",
+    "file": "_app/immutable/assets/_layout-71dd9cbc.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/develop/nextjs/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/nextjs/_page.svelte-f87abb10.js",
-    "src": "src/routes/develop/nextjs/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-ca03b43b.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/+error.svelte": {
-    "file": "_app/immutable/components/pages/_error.svelte-199923c5.js",
-    "src": "src/routes/+error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "_index-1b8e354b.js": {
-    "file": "_app/immutable/chunks/index-1b8e354b.js"
-  },
-  "_env-public-7fdc9c8e.js": {
-    "file": "_app/immutable/chunks/env-public-7fdc9c8e.js",
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/develop/nextjs/getting-start/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/nextjs/getting-start/_page.svelte-559970d5.js",
-    "src": "src/routes/develop/nextjs/getting-start/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/develop/react/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/react/_page.svelte-116b2333.js",
-    "src": "src/routes/develop/react/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/develop/react/getting-start/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/react/getting-start/_page.svelte-a30d9f63.js",
-    "src": "src/routes/develop/react/getting-start/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/develop/svelte/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/svelte/_page.svelte-97d1c0fd.js",
-    "src": "src/routes/develop/svelte/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/tech-review/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech-review/_page.svelte-70486887.js",
-    "src": "src/routes/tech-review/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
+      "src/routes/+error.svelte"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-2ba661be.js",
+    "file": "_app/immutable/start-d1f7c1b7.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-1b8e354b.js",
-      "_env-public-7fdc9c8e.js"
+      "_index-6460b426.js",
+      "_env-public-ebe11bfd.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -94,80 +37,96 @@
       ".svelte-kit/generated/nodes/14.js"
     ]
   },
-  "src/routes/develop/svelte/getting-start/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/svelte/getting-start/_page.svelte-62f95b07.js",
-    "src": "src/routes/develop/svelte/getting-start/+page.svelte",
+  "src/routes/develop/react/getting-start/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/react/getting-start/_page.svelte-b258dab6.js",
+    "src": "src/routes/develop/react/getting-start/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1b8e354b.js"
+      "_index-6460b426.js"
     ]
   },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-31faa713.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
+  "src/routes/develop/svelte/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/svelte/_page.svelte-2232bd21.js",
+    "src": "src/routes/develop/svelte/+page.svelte",
+    "isEntry": true,
     "imports": [
-      "src/routes/+error.svelte"
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/develop/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/_page.svelte-0e28b6ff.js",
+    "src": "src/routes/develop/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/tech-review/anker/space-q45/+page.svelte": {
+    "file": "_app/immutable/components/pages/tech-review/anker/space-q45/_page.svelte-f5445311.js",
+    "src": "src/routes/tech-review/anker/space-q45/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/tech-review/crossover-monitor/+page.svelte": {
+    "file": "_app/immutable/components/pages/tech-review/crossover-monitor/_page.svelte-ce2b9701.js",
+    "src": "src/routes/tech-review/crossover-monitor/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-36011153.js",
+    "file": "_app/immutable/chunks/2-bf679c7c.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/+page.svelte"
     ]
   },
-  "src/routes/tech-review/crossover-monitor/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech-review/crossover-monitor/_page.svelte-4eebd23e.js",
-    "src": "src/routes/tech-review/crossover-monitor/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/tech-review/anker/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech-review/anker/_page.svelte-6009c45e.js",
-    "src": "src/routes/tech-review/anker/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-2cdbfea5.js",
+    "file": "_app/immutable/chunks/3-39f53091.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/develop/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-d48268da.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-50658f2a.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/+layout.svelte"
+      "src/routes/develop/nextjs/+page.svelte"
     ]
   },
-  "src/routes/tech-review/ wrist-doctor-9988/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech-review/ wrist-doctor-9988/_page.svelte-8d04c4cb.js",
-    "src": "src/routes/tech-review/ wrist-doctor-9988/+page.svelte",
+  "src/routes/tech-review/anker/+page.svelte": {
+    "file": "_app/immutable/components/pages/tech-review/anker/_page.svelte-a652f163.js",
+    "src": "src/routes/tech-review/anker/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1b8e354b.js"
+      "_index-6460b426.js"
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-a6b49fe9.js",
+    "file": "_app/immutable/chunks/5-33a81dc9.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/develop/nextjs/getting-start/+page.svelte"
     ]
   },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-2fe17ae0.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/develop/react/+page.svelte"
+    ]
+  },
   ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-c36ec895.js",
+    "file": "_app/immutable/chunks/7-b3973c62.js",
     "src": ".svelte-kit/generated/nodes/7.js",
     "isDynamicEntry": true,
     "imports": [
@@ -175,111 +134,152 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-5a9768d4.js",
+    "file": "_app/immutable/chunks/8-c6ce9067.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/develop/svelte/+page.svelte"
     ]
   },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-5ede17b2.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
-  "src/routes/tech-review/anker/space-q45/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech-review/anker/space-q45/_page.svelte-c22a37ef.js",
-    "src": "src/routes/tech-review/anker/space-q45/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-1b8e354b.js"
-    ]
-  },
   ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-6b68f81b.js",
+    "file": "_app/immutable/chunks/9-cd335b51.js",
     "src": ".svelte-kit/generated/nodes/9.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/develop/svelte/getting-start/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-dae6a161.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/tech-review/anker/space-q45/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-4ac1d362.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/tech-review/ wrist-doctor-9988/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/14.js": {
-    "file": "_app/immutable/chunks/14-ae83a551.js",
-    "src": ".svelte-kit/generated/nodes/14.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/tech-review/crossover-monitor/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-773eaebc.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/develop/nextjs/+page.svelte"
-    ]
-  },
-  "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-e2262a99.js",
-    "src": "src/routes/+layout.svelte",
+  "src/routes/develop/svelte/getting-start/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/svelte/getting-start/_page.svelte-c6cec44d.js",
+    "src": "src/routes/develop/svelte/getting-start/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1b8e354b.js",
-      "_env-public-7fdc9c8e.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-b73056b2.css"
+      "_index-6460b426.js"
     ]
   },
   ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-74589592.js",
+    "file": "_app/immutable/chunks/10-95a28d71.js",
     "src": ".svelte-kit/generated/nodes/10.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/tech-review/+page.svelte"
     ]
   },
-  "src/routes/develop/+page.svelte": {
-    "file": "_app/immutable/components/pages/develop/_page.svelte-28434bd1.js",
-    "src": "src/routes/develop/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-09b56290.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-1b8e354b.js"
+      "src/routes/tech-review/ wrist-doctor-9988/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-d18b31f9.js",
+    "file": "_app/immutable/chunks/12-a0ff5668.js",
     "src": ".svelte-kit/generated/nodes/12.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/tech-review/anker/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-db380d8c.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-6821c113.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-9fe7b0be.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/develop/react/+page.svelte"
+      "src/routes/tech-review/anker/space-q45/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/14.js": {
+    "file": "_app/immutable/chunks/14-7fb1dfa0.js",
+    "src": ".svelte-kit/generated/nodes/14.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/tech-review/crossover-monitor/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-b1450e05.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "src/routes/tech-review/ wrist-doctor-9988/+page.svelte": {
+    "file": "_app/immutable/components/pages/tech-review/ wrist-doctor-9988/_page.svelte-f04f09f5.js",
+    "src": "src/routes/tech-review/ wrist-doctor-9988/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-63af7944.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js",
+      "_env-public-ebe11bfd.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-71dd9cbc.css"
+    ]
+  },
+  "_index-6460b426.js": {
+    "file": "_app/immutable/chunks/index-6460b426.js"
+  },
+  "_env-public-ebe11bfd.js": {
+    "file": "_app/immutable/chunks/env-public-ebe11bfd.js",
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "_app/immutable/components/pages/_error.svelte-881aebfa.js",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/tech-review/+page.svelte": {
+    "file": "_app/immutable/components/pages/tech-review/_page.svelte-731141db.js",
+    "src": "src/routes/tech-review/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/develop/react/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/react/_page.svelte-560cde57.js",
+    "src": "src/routes/develop/react/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/develop/nextjs/getting-start/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/nextjs/getting-start/_page.svelte-4d94b7e6.js",
+    "src": "src/routes/develop/nextjs/getting-start/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
+    ]
+  },
+  "src/routes/develop/nextjs/+page.svelte": {
+    "file": "_app/immutable/components/pages/develop/nextjs/_page.svelte-394bd519.js",
+    "src": "src/routes/develop/nextjs/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6460b426.js"
     ]
   }
 }
