@@ -3,7 +3,7 @@ import { readable } from 'svelte/store';
 
 import routes from 'src/data/routes.json';
 
-export const routes$ = readable<Route[]>(routes);
+export const routes$ = readable<Route[]>(routes as Route[]);
 
 function flatRoutes(routes: Route[]): Omit<Route, 'children'>[] {
   const result: Route[] = [];
